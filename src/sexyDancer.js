@@ -1,8 +1,8 @@
-var SexyDancer = function(top, left, timeBetweenSteps) {
+var DogFaceDancer = function(top, left, timeBetweenSteps) {
   Dancer.apply(this, [top, left, timeBetweenSteps]);
-  this.$node.addClass('sexy').fadeIn();
+  this.$node.addClass('dogFace').fadeIn();
 }
 
-SexyDancer.prototype = Object.create(Dancer.prototype);
-SexyDancer.prototype.constructor = SexyDancer;
+DogFaceDancer.prototype = Object.create(Dancer.prototype);
+DogFaceDancer.prototype.constructor = DogFaceDancer;
 

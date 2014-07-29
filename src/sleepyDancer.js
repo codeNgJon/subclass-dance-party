@@ -1,12 +1,12 @@
-var SleepyDancer = function(top, left, timeBetweenSteps) {
+var NyanDancer = function(top, left, timeBetweenSteps) {
   Dancer.apply(this, [top, left, timeBetweenSteps]);
-  this.$node.addClass('sleepy');
+  this.$node.addClass('nyan');
 };
 
-SleepyDancer.prototype = Object.create(Dancer.prototype);
-SleepyDancer.prototype.constructor = SleepyDancer;
+NyanDancer.prototype = Object.create(Dancer.prototype);
+NyanDancer.prototype.constructor = NyanDancer;
 
-SleepyDancer.prototype.lineUp = function() {
+NyanDancer.prototype.lineUp = function() {
   this.$node.animate({ left: 10 }, 5000);
 };
 

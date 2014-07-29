@@ -15,7 +15,6 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
-
 .lineUpButton{
   padding: 5px 12px;
   float: right;
@@ -32,12 +31,12 @@ body, a:link, a:visited, a:active{
   height: 30%;
   position:absolute;
 }
-.sexy{
+.dogFace{
   content:url('http://24.media.tumblr.com/tumblr_ma2dhq2hsu1qkb04po1_500.gif');
   /*height: 30%;*/
   position:absolute;
 }
-.sleepy{
+.nyan{
   content:url('http://img4.wikia.nocookie.net/__cb20130117231130/thefakegees/images/6/61/Nyan_Cat_Emoticon.gif');
   /*height: 30%;*/
   position:absolute;

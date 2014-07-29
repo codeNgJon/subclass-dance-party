@@ -4,46 +4,75 @@ body, html{
 body{
   margin: 0px;
   background-color:#444;
-  background-image:url('http://wallpaperpanda.com/wallpapers/Gi6/Kyy/Gi6Kyybip.jpg');
+  background-image:url('img/galaxyWallpaper.jpg');
   background-size: 100%;
   font-size: 18px;
+  font-family: Sans-serif;
+  overflow: hidden;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: white;
+  text-decoration: none;
 }
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
-}
-.lineUpButton{
+.button{
+  margin: 5px;
   padding: 5px 12px;
   float: right;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+.title, .addDancerButton{
+  background-color: #1f499c;
+}
+.lineUpButton{
+  background-color: #782c39;
+}
+.interactButton{
+  background-color: #782c39;
 }
 .topbar{
-  height:32px;
-  background-color: #555;
+  opacity: 1;
 }
 .title{
-  background-color: #777;
+  background-color: #593152;
+  font: italic bold 25px Sans-serif;
 }
 .dancer{
-  content:url('http://static.tumblr.com/984dac039c9fa22efa0cd312a3ef1754/b2yqfnd/kEhmzuz75/tumblr_static_large.gif');
+  content:url('img/llama.gif');
   height: 30%;
   position:absolute;
 }
 .dogFace{
-  content:url('http://24.media.tumblr.com/tumblr_ma2dhq2hsu1qkb04po1_500.gif');
-  /*height: 30%;*/
+  content:url('img/dogFace.gif');
   position:absolute;
 }
 .nyan{
-  content:url('http://img4.wikia.nocookie.net/__cb20130117231130/thefakegees/images/6/61/Nyan_Cat_Emoticon.gif');
-  /*height: 30%;*/
+  content:url('img/nyanCat.gif');
   position:absolute;
 }
+.reflection{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.rotate{
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
 
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
 
-
-
-
-
+  overflow:hidden;
+}
+.rotate:hover{
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+}

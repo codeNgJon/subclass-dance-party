@@ -2,7 +2,6 @@
 var Dancer = function(top, left, timeBetweenSteps){
   this.$node = $('<span class="dancer"></span>');
   this._timeBetweenSteps = timeBetweenSteps;
-
   this.step();
   this.setPosition(top, left);
 };
@@ -24,5 +23,13 @@ Dancer.prototype.setPosition = function(top, left){
 };
 
 Dancer.prototype.lineUp = function() {
-  this.$node.animate({ left: 10 }, 500);
+  this.$node.animate({ left: '80%'}, 500);
+};
+
+Dancer.prototype.interact = function(top, left){
+  this.$node.animate({ top: top, left: left }, 1000);
+};
+
+Dancer.prototype.reflection = function() {
+  this.$node.toggleClass('reflection');
 };

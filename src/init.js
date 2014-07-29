@@ -30,6 +30,10 @@ $(document).ready(function(){
     window.dancers.push(dancer);
 
     $('body').append(dancer.$node);
+
+    $('.dogFace').on('mouseover', function(){
+      $(this).addClass("rotate");
+    });
   });
 
   $('.lineUpButton').on('click', function(){
@@ -37,7 +41,35 @@ $(document).ready(function(){
       var dancer = window.dancers[i];
       dancer.lineUp();
     }
+  });
 
+  $('.interactButton').on('click', function(){
+    var randomPosition = function() {
+      return Math.floor(Math.random() * window.dancers.length);
+    }
+
+    //chooses a random dancer
+    var firstRandom = randomPosition();
+    var first = window.dancers[firstRandom];
+
+    //chooses a second different random dancer
+    var secondRandom = randomPosition();
+    while(secondRandom === firstRandom) {
+      secondRandom = randomPosition();
+    }
+    var second = window.dancers[secondRandom];
+
+    //moves first and second dancers to the center
+    first.interact($('body').height() * 0.5, $('body').width() * 0.4);
+    second.reflection();
+    second.interact($('body').height() * 0.5, $('body').width() * 0.5);
+
+    //moves the other dancers to the top
+    for(var i = 0; i < window.dancers.length; i++) {
+      if(i !== firstRandom && i !== secondRandom) {
+        window.dancers[i].$node.animate({top: '50px'}, 300);
+      }
+    }
   });
 
 });

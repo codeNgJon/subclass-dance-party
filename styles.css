@@ -25,3 +25,17 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.sexy{
+  border:15px solid purple;
+  border-radius:1px;
+  position:absolute;
+}
+.sleepy{
+  border:20px solid blue;
+  border-radius:15px;
+  position:absolute;
+}
+
+
+
+

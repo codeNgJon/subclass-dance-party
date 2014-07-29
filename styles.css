@@ -28,18 +28,18 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  content:url('http://img4.wikia.nocookie.net/__cb20130117231130/thefakegees/images/6/61/Nyan_Cat_Emoticon.gif');
+  content:url('http://static.tumblr.com/984dac039c9fa22efa0cd312a3ef1754/b2yqfnd/kEhmzuz75/tumblr_static_large.gif');
   height: 30%;
   position:absolute;
 }
 .sexy{
   content:url('http://24.media.tumblr.com/tumblr_ma2dhq2hsu1qkb04po1_500.gif');
-  height: 30%;
+  /*height: 30%;*/
   position:absolute;
 }
 .sleepy{
-  content:url('http://static.tumblr.com/984dac039c9fa22efa0cd312a3ef1754/b2yqfnd/kEhmzuz75/tumblr_static_large.gif');
-  height: 30%;
+  content:url('http://img4.wikia.nocookie.net/__cb20130117231130/thefakegees/images/6/61/Nyan_Cat_Emoticon.gif');
+  /*height: 30%;*/
   position:absolute;
 }
 

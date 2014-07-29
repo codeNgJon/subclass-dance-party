@@ -4,6 +4,8 @@ body, html{
 body{
   margin: 0px;
   background-color:#444;
+  background-image:url('http://wallpaperpanda.com/wallpapers/Gi6/Kyy/Gi6Kyybip.jpg');
+  background-size: 100%;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -13,6 +15,11 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
+
+.lineUpButton{
+  padding: 5px 12px;
+  float: right;
+}
 .topbar{
   height:32px;
   background-color: #555;
@@ -21,20 +28,22 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  content:url('http://img4.wikia.nocookie.net/__cb20130117231130/thefakegees/images/6/61/Nyan_Cat_Emoticon.gif');
+  height: 30%;
   position:absolute;
 }
 .sexy{
-  border:15px solid purple;
-  border-radius:1px;
+  content:url('http://24.media.tumblr.com/tumblr_ma2dhq2hsu1qkb04po1_500.gif');
+  height: 30%;
   position:absolute;
 }
 .sleepy{
-  border:20px solid blue;
-  border-radius:15px;
+  content:url('http://static.tumblr.com/984dac039c9fa22efa0cd312a3ef1754/b2yqfnd/kEhmzuz75/tumblr_static_large.gif');
+  height: 30%;
   position:absolute;
 }
+
+
 
 
 

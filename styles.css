@@ -30,6 +30,9 @@ body, a:link, a:visited, a:active{
 .interactButton{
   background-color: #782c39;
 }
+.spreadUpButton{
+  background-color: #782c39;
+}
 .topbar{
   opacity: 1;
 }

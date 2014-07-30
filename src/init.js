@@ -43,6 +43,15 @@ $(document).ready(function(){
     }
   });
 
+  $('.spreadUpButton').on('click', function(){
+    for(var i = 0; i< window.dancers.length; i++){
+      var dancer = window.dancers[i];
+      var top = Math.random() * $('body').height();
+      var left = Math.random() * $('body').width();
+      dancer.interact(top, left);
+    }
+  });
+
   $('.interactButton').on('click', function(){
     var randomPosition = function() {
       return Math.floor(Math.random() * window.dancers.length);

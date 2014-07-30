@@ -12,7 +12,6 @@ Dancer.prototype.step = function(){
   setTimeout( function(){ context.step(); }, this._timeBetweenSteps);
 };
 
-
 Dancer.prototype.setPosition = function(top, left){
   var styleSettings = {
     top: top,

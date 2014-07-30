@@ -9,7 +9,7 @@ var Dancer = function(top, left, timeBetweenSteps){
 Dancer.prototype.step = function(){
   var context = this;
   // closure created for context with the anonymous fxn
-  setTimeout( function(){ context.step(); }, this._timeBetweenSteps);
+  setTimeout(function(){ context.step(); }, this._timeBetweenSteps);
 };
 
 Dancer.prototype.setPosition = function(top, left){

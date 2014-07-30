@@ -32,3 +32,24 @@ describe("blinkyDancer", function() {
     });
   });
 });
+
+describe("nyanDancer", function() {
+
+  var nyanDancer;
+  var timeBetweenSteps = 100;
+  var clock;
+
+  beforeEach(function() {
+    clock = sinon.useFakeTimers();
+    nyanDancer = new NyanDancer(10, 20, timeBetweenSteps);
+  });
+
+  it("should have a jQuery $node object", function(){
+    expect(nyanDancer.$node).to.be.an.instanceof(jQuery);
+  });
+
+  it("should delegate to dancer if the look up fails", function(){
+    expect(nyanDancer.setPosition).to.be.a('function');
+  });
+
+});
